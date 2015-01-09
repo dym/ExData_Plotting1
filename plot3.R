@@ -11,7 +11,6 @@ household <- select(household, -(Date:Time))
 
 # paint
 png(filename = "plot3.png", width = 480, height = 480, units = "px", pointsize = 12, bg = "white")
-#with(household, plot(Datetime, Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "n"))
 with(household, plot(Datetime, Sub_metering_1,
                      ylab = "Energy sub metering",
                      xlab = "",
