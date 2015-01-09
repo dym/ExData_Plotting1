@@ -1,4 +1,4 @@
-all: cleandata plot1
+all: cleandata plot1 plot2
 
 cleandata:
 	head -n 1 data/household_power_consumption.txt > data/household_cleandata.txt
@@ -6,3 +6,6 @@ cleandata:
 
 plot1:
 	R --no-save < plot1.R
+
+plot2:
+	LC_ALL=C R --no-save < plot2.R
