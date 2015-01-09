@@ -1,4 +1,4 @@
-all: cleandata plot1 plot2 plot3 plot4
+all: plot1 plot2 plot3 plot4
 
 cleandata:
 	head -n 1 data/household_power_consumption.txt > data/household_cleandata.txt
